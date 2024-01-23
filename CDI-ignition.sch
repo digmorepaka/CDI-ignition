@@ -73,8 +73,6 @@ Wire Wire Line
 Wire Wire Line
 	4650 3350 4650 3300
 Wire Wire Line
-	4000 3050 4000 3150
-Wire Wire Line
 	3900 3150 3900 3350
 $Comp
 L Connector:Screw_Terminal_01x06 J1
@@ -95,8 +93,6 @@ Wire Wire Line
 Wire Wire Line
 	3550 2950 3950 2950
 Wire Wire Line
-	3550 3050 4000 3050
-Wire Wire Line
 	3550 3150 3900 3150
 Text GLabel 5050 2700 1    50   Input ~ 0
 C2
@@ -106,7 +102,7 @@ Text GLabel 3950 2700 1    50   Input ~ 0
 G
 Text GLabel 4050 2700 1    50   Input ~ 0
 I
-Text GLabel 5300 3350 3    50   Input ~ 0
+Text GLabel 5450 3350 2    50   Input ~ 0
 1
 Text GLabel 5300 2950 2    50   Input ~ 0
 15
@@ -114,14 +110,6 @@ Text GLabel 3550 3250 2    50   Input ~ 0
 C1
 Text GLabel 3550 3350 2    50   Input ~ 0
 C2
-Connection ~ 4150 3150
-Wire Wire Line
-	4000 3150 4150 3150
-Wire Wire Line
-	4150 3250 4150 3150
-Connection ~ 4450 3250
-Wire Wire Line
-	4450 3250 4450 3150
 $Comp
 L Device:R R2
 U 1 1 65582F30
@@ -135,17 +123,6 @@ F 3 "~" H 4300 3250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4450 3250 4500 3250
-$Comp
-L Device:R R1
-U 1 1 65582040
-P 4300 3150
-F 0 "R1" V 4200 2950 50  0000 C CNN
-F 1 "placeholder" V 4600 3150 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 4230 3150 50  0001 C CNN
-F 3 "~" H 4300 3150 50  0001 C CNN
-	1    4300 3150
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3950 2700 3950 2950
 Connection ~ 3950 2950
@@ -156,12 +133,22 @@ Wire Wire Line
 Wire Wire Line
 	4050 2700 4050 3050
 Wire Wire Line
-	4050 3050 4000 3050
-Connection ~ 4000 3050
-Wire Wire Line
 	5050 2700 5050 2950
 Connection ~ 5050 2950
 Wire Wire Line
 	4750 2700 4750 2950
 Connection ~ 4750 2950
+Wire Wire Line
+	4650 3350 5300 3350
+Connection ~ 4650 3350
+Wire Wire Line
+	5450 3350 5300 3350
+Connection ~ 5300 3350
+Wire Wire Line
+	3550 3050 4050 3050
+Wire Wire Line
+	4050 3050 4150 3050
+Wire Wire Line
+	4150 3050 4150 3250
+Connection ~ 4050 3050
 $EndSCHEMATC
